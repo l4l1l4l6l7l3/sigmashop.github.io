@@ -1,206 +1,189 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ROOM SHOP</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <style>
-      body {
-        margin: 0;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        background: #111;
-        color: #fff;
-      }
-
-      header {
-        text-align: center;
-        padding: 12px;
-        background: #111;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 10;
-      }
-
-      header h2 {
-        margin: 0;
-        font-size: 18px;
-        color: #ddd;
-      }
-
-      header p {
-        font-size: 12px;
-        color: #888;
-        margin: 0;
-      }
-
-      .swiper {
-        width: 100%;
-        height: 100vh;
-        padding-top: 60px;
-        box-sizing: border-box;
-      }
-
-      .swiper-slide {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 16px;
-        box-sizing: border-box;
-      }
-
-      .product-card {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        border-radius: 20px;
-        background: #1c1c1c;
-        overflow: hidden;
-      }
-
-      .product-card img {
-        width: 100%;
-        height: 55%;
-        object-fit: cover;
-      }
-
-      .info {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        flex-grow: 1;
-        padding: 20px;
-      }
-
-      .category {
-        color: gold;
-        font-size: 14px;
-      }
-
-      h3 {
-        margin: 8px 0;
-        font-size: 20px;
-      }
-
-      .price-stock {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 6px 0 12px;
-      }
-
-      .price {
-        font-size: 22px;
-        color: gold;
-      }
-
-      .stock {
-        font-size: 14px;
-        color: #0f0;
-        text-align: right;
-      }
-
-      .add-btn {
-        width: 100%;
-        padding: 14px;
-        margin-top: auto;
-        font-size: 16px;
-        background: orange;
-        border: none;
-        border-radius: 12px;
-        color: black;
-        font-weight: bold;
-        cursor: pointer;
-      }
-
-      .swiper-pagination-bullet {
-        background: #888;
-      }
-      .swiper-pagination-bullet-active {
-        background: orange;
-      }
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>SIGMA SHOP</title>
   </head>
+
   <body>
-    <header>
-      <h2>ROOM SHOP</h2>
-      <p>мини-приложение</p>
+    <header class="header">
+      <div class="top-row">
+        <div class="logo">SIGMA SHOP</div>
+        <div class="buy-button">
+          <a href="https://t.me/username" target="_blank">Купить</a>
+        </div>
+      </div>
     </header>
 
-    <!-- Свайпер -->
-    <div class="swiper">
-      <div class="swiper-wrapper" id="products-container">
-        <!-- Карточки будут генерироваться тут -->
+    <div class="container">
+      <div class="card">
+        <img
+          src="/images/chaser_berrynedles.webp"
+          alt=""
+          width="100%"
+          class="card-image"
+        />
+        <h3 class="card-title">Chaser SPECIAL - Berry Nedles</h3>
+        <p class="card-stock">в наличие</p>
+        <p class="card-price">60 zl</p>
       </div>
-      <div class="swiper-pagination"></div>
+      <div class="card">
+        <img
+          src="/images/Chaser_SPECIAL_Cherries.webp"
+          alt=""
+          width="100%"
+          class="card-image"
+        />
+        <h3 class="card-title">Chaser SPECIAL - Cherries</h3>
+        <p class="card-stock">в наличие</p>
+        <p class="card-price">60 zl</p>
+      </div>
+      <div class="card">
+        <img
+          src="/images/nabor-chaser-special-berry-blueberry-lemon.jpg"
+          alt=""
+          width="100%"
+          class="card-image"
+        />
+        <h3 class="card-title">Chaser SPECIAL Blueberry Lemon</h3>
+        <p class="card-stock">в наличие</p>
+        <p class="card-price">60 zl</p>
+      </div>
+      <div class="card">
+        <img
+          src="/images/nabor-chaser-special-berru-strawberry-jelly-30-ml.800x800w.webp"
+          alt=""
+          width="100%"
+          class="card-image"
+        />
+        <h3 class="card-title">Chaser SPECIAL - Strawberry Jelly</h3>
+        <p class="card-stock">в наличие</p>
+        <p class="card-price">60 zl</p>
+      </div>
+      <div class="card">
+        <img
+          src="/images/nabor-chaser-special-berru-fall-tea-30-ml.800x800.jpg.webp"
+          alt=""
+          width="100%"
+          class="card-image"
+        />
+        <h3 class="card-title">Chaser SPECIAL - Fall Tea</h3>
+        <p class="card-stock">в наличие</p>
+        <p class="card-price">60 zl</p>
+      </div>
+      <div class="card">
+        <img
+          src="/images/nabor-chaser-special-berru-punch-30-ml.800x800w.webp"
+          alt=""
+          width="100%"
+          class="card-image"
+        />
+        <h3 class="card-title">Chaser SPECIAL - Punch</h3>
+        <p class="card-stock">в наличие</p>
+        <p class="card-price">60 zl</p>
+      </div>
+      <div class="card">
+        <img
+          src="/images/nabor-chaser-special-berru-berry-candy-30-ml.800x800.jpg.webp"
+          alt=""
+          width="100%"
+          class="card-image"
+        />
+        <h3 class="card-title">Chaser SPECIAL - Berry Candy</h3>
+        <p class="card-stock">в наличие</p>
+        <p class="card-price">60 zl</p>
+      </div>
+      <div class="card">
+        <img
+          src="/images/nabor-chaser-special-berru-cranberry-mint-30-ml.800x800.jpg.webp"
+          alt=""
+          width="100%"
+          class="card-image"
+        />
+        <h3 class="card-title">Chaser SPECIAL - Cranberry Mint</h3>
+        <p class="card-stock">в наличие</p>
+        <p class="card-price">60 zl</p>
+      </div>
+      <div class="card">
+        <img
+          src="/images/c6cbbc_acbdbe11b6f54b49aa2da255845fa912_mv2.webp"
+          alt=""
+          width="100%"
+          class="card-image"
+        />
+        <h3 class="card-title">Chaser - Blueberry Mint</h3>
+        <p class="card-stock">в наличие</p>
+        <p class="card-price">60 zl</p>
+      </div>
+      <div class="card">
+        <img
+          src="/images/Elfliq_BlueRazz_Lemonade.webp"
+          alt=""
+          width="100%"
+          class="card-image"
+        />
+        <h3 class="card-title">ELFLIQ - Blue Razz Lemonade</h3>
+        <p class="card-stock">в наличие</p>
+        <p class="card-price">60 zl</p>
+      </div>
+      <div class="card">
+        <img
+          src="/images/elfliq-pina-colada.webp"
+          alt=""
+          width="100%"
+          class="card-image"
+        />
+        <h3 class="card-title">ELFLIQ Liquid - Pina Colada</h3>
+        <p class="card-stock">в наличие</p>
+        <p class="card-price">60 zl</p>
+      </div>
+      <div class="card">
+        <img
+          src="/images/elfliq-strawberry-ice-30-ml-1-1000x1000.webp"
+          alt=""
+          width="100%"
+          class="card-image"
+        />
+        <h3 class="card-title">ELFLIQ - Peach Ice</h3>
+        <p class="card-stock">в наличие</p>
+        <p class="card-price">60 zl</p>
+      </div>
+      <div class="card">
+        <img
+          src="/images/Pica-enhance-20250102225712.webp"
+          alt=""
+          width="100%"
+          class="card-image"
+        />
+        <h3 class="card-title">ELFLIQ - Pineapple Colada</h3>
+        <p class="card-stock">в наличие</p>
+        <p class="card-price">60 zl</p>
+      </div>
+      <div class="card">
+        <img
+          src="/images/elfliq-blueberry-30-ml-1-1000x1000.webp"
+          alt=""
+          width="100%"
+          class="card-image"
+        />
+        <h3 class="card-title">ELFLIQ - Cherry</h3>
+        <p class="card-stock">в наличие</p>
+        <p class="card-price">60 zl</p>
+      </div>
+      <div class="card">
+        <img
+          src="/images/elfliq-cherry-cola-30-ml-1-1000x1000.webp"
+          alt=""
+          width="100%"
+          class="card-image"
+        />
+        <h3 class="card-title">ELFLIQ - Cola</h3>
+        <p class="card-stock">в наличие</p>
+        <p class="card-price">60 zl</p>
+      </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      const products = [
-        {
-          id: 1,
-          category: "Жижки",
-          title: "Chaser Special - Berry needles",
-          price: "60 zł",
-          stock: 6,
-          image: "https://e-dym.pl/17124-large_default/10ml-bm-menthol.jpg",
-        },
-        {
-          id: 2,
-          category: "Жижки",
-          title: "Ice Mango",
-          price: "55 zł",
-          stock: 12,
-          image: "https://e-dym.pl/17124-large_default/10ml-bm-menthol.jpg",
-        },
-      ];
-
-      const container = document.getElementById("products-container");
-
-      // Генерация карточек
-      products.forEach((p) => {
-        const slide = document.createElement("div");
-        slide.className = "swiper-slide";
-        slide.innerHTML = `
-          <div class="product-card">
-            <img src="${p.image}" alt="${p.title}" />
-            <div class="info">
-              <span class="category">${p.category}</span>
-              <h3>${p.title}</h3>
-              <div class="price-stock">
-                <p class="price">${p.price}</p>
-                <p class="stock">В наличии — ${p.stock} шт.</p>
-              </div>
-            </div>
-          </div>
-        `;
-        container.appendChild(slide);
-      });
-
-      // Инициализация свайпера
-      const swiper = new Swiper(".swiper", {
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-
-      // Обработка кнопок "Добавить в корзину"
-      document.querySelectorAll(".add-btn").forEach((btn) => {
-        btn.addEventListener("click", () => {
-          let tg = window.Telegram.WebApp;
-          const id = btn.getAttribute("data-id");
-          const product = products.find((p) => p.id == id);
-          tg.sendData(JSON.stringify(product));
-        });
-      });
-    </script>
   </body>
 </html>
